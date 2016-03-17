@@ -27,18 +27,10 @@ config CONFIG_ARM_EABI
 
 config COMPILE_IN_THUMB_MODE
 	bool "Build using Thumb mode"
-	select USE_BX
 	select USE_LDREXSTREX
 	help
 	  Say 'y' here to force building uClibc in thumb mode.
 	  Say 'n' to use your compiler's default mode.
-
-config USE_BX
-	bool "Use BX in function return"
-	help
-	  Say 'y' to use BX to return from functions on your thumb-aware
-	  processor. Say 'y' if you need to use interworking. Say 'n' if not.
-	  It is safe to say 'y' even if you're not doing interworking.
 
 config USE_LDREXSTREX
 	bool "Use load-store exclusive ASM ops (not supported in SmartFusion)"
