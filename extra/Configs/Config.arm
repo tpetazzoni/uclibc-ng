@@ -24,9 +24,3 @@ config CONFIG_ARM_EABI
 
 	  If you say 'n' here, then the library will be built for the
 	  old Linux ABI.
-
-config COMPILE_IN_THUMB_MODE
-	bool "Build using Thumb mode"
-	help
-	  Say 'y' here to force building uClibc in thumb mode.
-	  Say 'n' to use your compiler's default mode.
